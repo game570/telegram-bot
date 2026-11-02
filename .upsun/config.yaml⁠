@@ -1,0 +1,16 @@
+applications:
+  bot:
+    source:
+      type: local
+    build:
+      flavor: python
+    dependencies:
+      python:
+        - "3.11"
+    web:
+      commands:
+        start: "python main.py"
+    hooks:
+      build: |
+        set -ex
+        pip install -r requirements.txt
