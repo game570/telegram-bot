@@ -9,6 +9,6 @@ applications:
     commands:
       start: "python main.py"
     hooks:
-      bhuild: |
+      build: |
         set -ex
         pip install -r requirements.txt
