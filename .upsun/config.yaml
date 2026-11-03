@@ -1,3 +1,4 @@
+cat << 'EOF' > .upsun/config.yaml
 applications:
   bot:
     type: python:3.11
@@ -8,3 +9,4 @@ applications:
       build: |
         set -ex
         pip install -r requirements.txt
+EOF
