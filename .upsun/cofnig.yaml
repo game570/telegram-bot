@@ -1,0 +1,12 @@
+applications:
+  bot:
+    type: python:3.11
+    dependencies:
+      python:
+        "3.11": {}
+    commands:
+      start: "python main.py"
+    hooks:
+      build: |
+        set -ex
+        pip install -r requirements.txt
