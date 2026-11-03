@@ -4,8 +4,9 @@ applications:
     dependencies:
       python:
         "3.11": {}
-    commands:
-      start: "python main.py"
+    web:
+      commands:
+        start: "python main.py"
     hooks:
       build: |
         set -ex
