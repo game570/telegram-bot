@@ -1,13 +1,10 @@
 applications:
   bot:
     type: python:3.11
-    dependencies:
-      python:
-        3.11
     web:
       commands:
         start: "python main.py"
     hooks:
       build: |
         set -ex
-        pp install -r requirements.txt
+        pip install -r requirements.txt
