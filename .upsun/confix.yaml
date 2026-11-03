@@ -1,0 +1,13 @@
+telegram:
+  token: "your_token_here"
+  
+types:
+  python: 3.11
+
+dependencies:
+  - requests
+  - telebot
+
+start: "python main.py"
+hooks: |
+  pip install -r requirements.txt
